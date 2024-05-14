@@ -1,0 +1,127 @@
+<div class="section-container">
+  <section class="section-one">
+    <div class="section-left">
+      <div class="section-left-title">
+        <h1>Iniciar sesión</h1>
+      </div>
+      <div class="section-left-p">
+        <p>
+          Nos alegra tenerte de vuelta y estamos listos para atender tus
+          necesidades. Inicia sesión y continúa aprovechando al máximo nuestra
+          plataforma.
+        </p>
+      </div>
+      <div class="section-left-items">
+        <svg
+          width="20"
+          height="16"
+          viewBox="0 0 20 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.0001 16V7H13.0001V0H20.0001L18.0001 5H20.0001L15.0001 16ZM13 9V16H1.99997C0.899975 16 -2.51321e-05 15.1 -2.51321e-05 14V11C-2.51321e-05 9.9 0.899975 9 1.99997 9H13ZM4.24984 11.75H2.74984V13.25H4.24984V11.75ZM10.9998 1.76572e-06V7H1.99976C0.899756 7 -0.000244141 6.1 -0.000244141 5V2C-0.000244141 0.900002 0.899756 1.76572e-06 1.99976 1.76572e-06H10.9998ZM4.24984 2.75003H2.74984V4.25003H4.24984V2.75003Z"
+            fill="#FFB84B"
+          />
+        </svg>
+        <div class="section-left-items-content">
+          <h5>Monitoreo integra</h5>
+          <p>Administra, monitoria mutiples plantas de forma centralizada</p>
+        </div>
+      </div>
+      <div class="section-left-items">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.9898 2C6.46976 2 1.99976 6.48 1.99976 12C1.99976 17.52 6.46976 22 11.9898 22C17.5198 22 21.9998 17.52 21.9998 12C21.9998 6.48 17.5198 2 11.9898 2ZM16.2301 18L12.0001 15.45L7.77005 18L8.89005 13.19L5.16005 9.96002L10.0801 9.54002L12.0001 5.00002L13.9201 9.53002L18.8401 9.95002L15.1101 13.18L16.2301 18Z"
+            fill="#FFB84B"
+          />
+        </svg>
+        <div class="section-left-items-content">
+          <h5>Notificaciones en tiempo real</h5>
+          <p>Recibi notificaciones en tiempo real sobre las mediciones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-two">
+    <div class="section-right">
+      <div class="login">
+        <div class="section-right-h3">
+          <h3>Portal de monitoreo</h3>
+        </div>
+        <div class="section-right-h5">
+          <h5>Iniciar sesión</h5>
+        </div>
+
+        <form
+          class="custom-form"
+          (ngSubmit)="login($event)"
+          [formGroup]="loginForm"
+        >
+          <div class="custom-form-email">
+            <input
+              type="email"
+              formControlName="email"
+              placeholder="Luciano@email.com"
+              required="required"
+            />
+          </div>
+          <div class="custom-form-password">
+            <input
+              type="password"
+              formControlName="password"
+              placeholder="Contraseña"
+              required="required"
+              #inputAText
+            />
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              (click)="changeEye()"
+              #eyeVisivility
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.9999 6.03735C7.90903 6.03735 4.41539 8.52535 2.99994 12.0374C4.41539 15.5494 7.90903 18.0374 11.9999 18.0374C16.0908 18.0374 19.5845 15.5494 20.9999 12.0374C19.5845 8.52535 16.0908 6.03735 11.9999 6.03735ZM11.9992 16.0373C9.741 16.0373 7.90827 14.2453 7.90827 12.0373C7.90827 9.82933 9.741 8.03733 11.9992 8.03733C14.2574 8.03733 16.0901 9.82933 16.0901 12.0373C16.0901 14.2453 14.2574 16.0373 11.9992 16.0373ZM11.9994 9.63692C10.6412 9.63692 9.54488 10.7089 9.54488 12.0369C9.54488 13.3649 10.6412 14.4369 11.9994 14.4369C13.3576 14.4369 14.454 13.3649 14.454 12.0369C14.454 10.7089 13.3576 9.63692 11.9994 9.63692Z"
+                fill="#84818A"
+              />
+            </svg>
+          </div>
+
+          <div class="custom-form-footer">
+            <div class="custom-form-footer-flex">
+              <p routerLink="/registro">¿Olvidaste tu contraseña?</p>
+              <button type="submit">Iniciar sesión</button>
+            </div>
+            <div class="custom-form-footer-terms">
+              <p>
+                Protegido por reCAPTCHA y sujeto a la
+                <a href="#">Política de Privacidad </a>y
+                <a href="#">Condiciones</a>.
+              </p>
+              <br />
+              <p>
+                Si no tenes cuenta <a routerLink="/registro">registrate aca</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,230 @@
+.section-container {
+  background: linear-gradient(180deg, #33a3aa 0%, #138188 100%);
+  display: flex;
+}
+.section-one {
+  width: 50%;
+  height: 50vw;
+  color: #ffffff;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 840px) {
+  .section-container {
+    background: #ffffff;
+  }
+  .section-one {
+    display: none;
+  }
+  .section-two {
+    margin: auto;
+    width: 100% !important;
+    background: #ffffff !important;
+  }
+  .section-right-h5 {
+    display: flex;
+    justify-content: center;
+  }
+  .section-right-h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-container {
+    width: 100% !important;
+  }
+
+  .custom-form-footer-flex {
+    display: block !important;
+    margin-top: 70% !important;
+  }
+
+  .custom-form-footer-flex button {
+    display: block;
+    margin: auto;
+    width: 90% !important;
+  }
+}
+
+.section-left {
+  margin: auto;
+  max-width: 453px;
+  max-height: 335px;
+}
+
+.section-left-title {
+  width: 361px;
+  height: 86px;
+  left: 128px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.section-left-title h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  text-align: left;
+}
+.section-left-p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  text-align: left;
+  width: 360px;
+  height: 88px;
+  left: 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.section-left-items {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  margin-top: 1rem;
+}
+.section-left-items-content {
+  margin-left: 24px;
+}
+.section-left-items-content h1 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+.section-left-items-content p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+}
+.section-left-items .section-left-items-content {
+  display: block;
+}
+
+.section-two {
+  width: 50%;
+  height: 57vw;
+  border-radius: 32px 0 0 32px;
+  background-color: #fbfcfc;
+  color: #202020;
+  display: flex;
+}
+.section-right {
+  margin: auto;
+  width: 457px;
+  height: 650px;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+}
+.login {
+  width: 417px;
+  height: 650px;
+  margin: auto;
+  margin-top: 60px;
+}
+.section-right-h3 {
+  font-family: Inter;
+  font-size: 36.48px;
+  font-weight: 600;
+  line-height: 44.14px;
+}
+.section-right-h5 {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.custom-form input {
+  width: 417px;
+  height: 48px;
+  gap: 0px;
+  border: 1px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: 0px 8px 32px 0px #0000000f;
+}
+.custom-form-email input::placeholder {
+  padding: 5px;
+  color: #84818a;
+}
+.custom-form-password input::placeholder {
+  padding: 5px;
+  color: #84818a;
+}
+.custom-form-password {
+  display: flex;
+  align-items: center;
+}
+
+.custom-form-password svg {
+  margin-left: -35px;
+}
+
+.custom-form-footer-flex {
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.custom-form-footer-flex .registro-button {
+  width: 164px;
+  height: 48px;
+  top: 418.04px;
+  left: 261px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #33a3aa;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.custom-form-footer-flex .login-button {
+  width: 164px;
+  height: 48px;
+  top: 418.04px;
+  left: 261px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #eeebeb;
+  border: none;
+  border-radius: 15px;
+  color: #090808;
+}
+
+.custom-form-footer-flex p {
+  color: #47464a;
+}
+
+.custom-form-footer-terms p {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+}
+.custom-form-footer-terms a {
+  color: #33a3aa;
+  text-decoration: none;
+}
+
+.custom-form .error-div {
+  display: block;
+  color: rgb(245, 67, 67);
+}

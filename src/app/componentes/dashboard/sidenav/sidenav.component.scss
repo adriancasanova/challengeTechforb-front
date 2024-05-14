@@ -1,0 +1,43 @@
+.sidenav {
+  background-color: transparent;
+  width: 82px;
+  height: 50vw;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+li a {
+  display: block;
+  margin: auto;
+}
+.aling-svgs {
+  display: flex;
+  align-items: center;
+}
+
+.aling-svgs svg {
+  height: 20px;
+}
+.sidenav-btn {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .sidenav {
+    display: none;
+  }
+  .sidenav-btn {
+    display: block;
+  }
+  .sidenav-btn svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,377 @@
+.main-container {
+  width: Hug (1, 280px) px;
+  height: Hug (110px) px;
+  top: 109px;
+  left: 124px;
+  gap: 28px;
+  opacity: 0px;
+}
+.main-card-container {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  display: flex;
+  color: #8e8ea1;
+}
+.hiddenH1 {
+  display: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  text-align: left;
+}
+@media (max-width: 840px) {
+  .main-card-container {
+    display: block;
+  }
+  .main-card {
+    display: block;
+    width: 90% !important;
+    margin: auto;
+  }
+  .content-plantas {
+    width: 90% !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 694px) {
+  th {
+    display: none;
+  }
+  .hiddenH1 {
+    display: block;
+  }
+  .table {
+    width: 100% !important;
+  }
+  .table-container {
+    height: auto !important;
+  }
+}
+
+.main-card {
+  display: flex;
+  width: 278px;
+  height: 110px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 30px 10px 30px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-card .card-number {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: #22242c;
+  margin: 10px;
+}
+.main-card .card-text {
+  margin: 10px;
+}
+.circle-blue {
+  background: #ebf8f9;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+}
+.main-card svg {
+  display: flex;
+  margin: auto;
+  width: 25px;
+  height: 55px;
+}
+
+.circle-yellow {
+  background: #f8e1a8;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+}
+.circle-yellow .one {
+  width: 7px;
+  height: 24px;
+}
+.circle-yellow .two {
+  width: 7px;
+  height: 20px;
+}
+.circle-red {
+  background: #f69681;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+}
+.circle-orange {
+  background: #fadabc;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+}
+
+/*-----------------COMPOENETE DE LA TABLA------------------------*/
+.content-planta {
+  width: 1277px;
+  height: 511px;
+  background-color: #ffffff;
+}
+.header-table {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+}
+.header-table h4,
+button {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+  color: #22242c;
+  margin: 10px;
+}
+
+.header-table button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 0.1px black solid;
+  border-style: ridge;
+  cursor: pointer;
+}
+hr {
+  margin: auto;
+  width: 90%;
+  color: #f3f6f7;
+}
+.table-container {
+  height: 400px;
+}
+table {
+  width: 80%;
+  background-color: hsl(0, 0%, 100%);
+  margin: 20px auto;
+  padding: 10px;
+}
+th {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.58px;
+  color: #b0cad1;
+  background-color: #ffffff;
+}
+td {
+  padding: 10px;
+  margin: auto;
+}
+/*Estilos del modal editar Eliminar */
+.menuEditarEliminar {
+  width: 70px;
+  position: absolute;
+  height: 50px;
+  z-index: 10;
+  margin-right: 10px;
+  background-color: #ccccd2;
+}
+
+/*Estilos del modal */
+
+.modal-content {
+  width: 100%;
+}
+.modal-header h1 {
+  font-family: Inter;
+  font-size: 16px;
+}
+.modal-content svg {
+  display: flex;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.modal-body input {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  margin: 5px;
+  border-radius: 10px;
+  width: 428px;
+  height: 38px;
+  border: 1px solid #dcdbdd;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.modal-footer {
+  border: none !important;
+}
+.modal-footer button {
+  width: 119px;
+  height: 38px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  border: none;
+  cursor: pointer;
+}
+.modal-footer .add-button {
+  color: #ffffff;
+  background-color: #33a3aa;
+}
+.modal-footer .close-button {
+  color: #8f9ca1;
+  background-color: #eeebeb;
+}
+
+/* BOTON DESPLEGABLE */
+
+.button-menu {
+  padding: 5px;
+  border: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: #eeebeb;
+}
+
+/*Estilo de los input*/
+
+input:focus,
+select:focus,
+select,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.section select {
+  font-family: Inter !important;
+  font-size: 1.3rem !important;
+  font-weight: 400;
+  display: block;
+  border-radius: 0.2rem;
+  border: none;
+  border-bottom: 0.2rem solid rgb(245, 22, 22);
+  font-size: 1rem;
+}
+
+.boton-guardar-registro:hover {
+  transition: 0.2s;
+  background-color: rgba(151, 15, 15, 0.883);
+  font-size: 1.1rem;
+}
+
+.boton-cancelar-registro:hover {
+  transition: 0.2s;
+  background-color: rgba(175, 172, 172, 0.883);
+  font-size: 1.1rem;
+}
+
+/* prueba para crear select personalizado*/
+
+a {
+  text-decoration: none;
+}
+
+.select {
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  z-index: 200;
+
+  margin: 5px;
+  border-radius: 10px;
+  width: 428px;
+  height: 38px;
+  border: 1px solid #dcdbdd;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.select i {
+  font-size: 20px;
+  color: #000000;
+}
+
+.titulo {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.opciones {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  max-height: 400px;
+  overflow: auto;
+  z-index: 100;
+  width: 100%;
+  display: none;
+}
+
+.opciones.active {
+  display: block;
+  position: absolute;
+  width: 20rem;
+  z-index: 201;
+}
+
+.contenido-opcion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.opciones .contenido-opcion {
+  padding: 10px;
+}
+
+.opciones .contenido-opcion:hover {
+  border-bottom: 0.2rem solid rgb(245, 22, 22);
+}
+
+.selectProspecto:focus {
+  border-bottom: 0.5rem solid rgb(241, 230, 230) !important;
+  width: 102% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .selectbox {
+    width: 100%;
+  }
+}
+
+.aling {
+  align-items: center;
+}
